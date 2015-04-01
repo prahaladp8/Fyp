@@ -1,0 +1,20 @@
+{% extends "Template.html" %}
+{% block content %}
+<div id="chart1">
+	
+</div>
+<script type="text/javascript">
+	$.ajax({url: "EngagementByTweets", success: function(result){
+        $("#chart1").html(result);
+    }});
+</script>
+<br/>	
+<div id="chart2">
+	
+</div>
+<br/>
+<div id="chart3">
+	
+</div>
+<br/>
+{% endblock %}
